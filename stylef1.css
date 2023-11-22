@@ -1,0 +1,223 @@
+@media screen and (max-width: 700px) {
+    .destination {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+
+@media screen and (min-width: 701px) {
+    .destination {
+        width: 800px;
+        height: 600px;
+    }
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0055A4; 
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+}
+.header {
+    background-image: url('avionenelcielo.jpg'); 
+    background-size: cover; 
+    color: #fff; 
+    text-align: center; 
+    padding: 100px 0; 
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+}
+
+.container-nav {
+    display: flex;
+    padding: 10px;
+    height: 10px;
+    background-color: red;
+    color: aquamarine;
+    margin-bottom: 0px;
+  }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 99,9%;
+    padding: 2px;
+    margin: 2px;
+    border: 2px;
+  }
+    
+  .brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  li>a {
+    padding: 1px 14px;
+  }
+  
+  
+  li {
+    list-style-type: none;
+  }
+  
+  
+.a1 {
+    color: black;
+    text-decoration:cyan;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .button-menu-toggle {
+    display: none;
+  }
+
+@media (max-width: 768px) {
+    .column {
+      flex: 100%;
+    }
+  
+  
+    .nav-links {
+      display: none;
+    }
+  
+  
+    .button-menu-toggle {
+      display: block;
+      background-color: white;
+      border:none;
+      border-radius: 50px;
+      padding: 0 24px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+    }
+   
+    .nav-links.nav-links-responsive {
+      position: absolute;
+      display: flex;
+      background-color: rgba(20,20,20,0.95);
+      width: 100%;
+      height: 100%;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 200px;
+      align-items: center;
+      gap:70px;
+      font-size: 40px;
+  
+  
+    }
+  }
+
+
+
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+.container {
+    background-image: linear-gradient(#FFFFFF); 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #6e6e6e;
+    
+}
+
+h1 {
+    color: #fff;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.background-image {
+    background-image: url('francia.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,301 @@
+/* Estilos para pantallas más pequeñas (hasta 600px de ancho) */
+@media screen and (max-width: 700px) {
+    .destination {
+        width: 100%; /* Ancho del 100% para ocupar todo el ancho del contenedor */
+        height: auto; /* Altura automática para mantener la proporción original */
+    }
+}
+
+/* Estilos para pantallas más grandes (más de 600px de ancho) */
+@media screen and (min-width: 701px) {
+    .destination {
+        width: 800px;
+        height: 600px;
+    }
+}
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 255, 255);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+}
+.header {
+    background-image: url('avionenelcielo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del header */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centra el texto en el header */
+    padding: 100px 0; /* Espacio interno arriba y abajo */
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para que el texto sea legible */
+    padding: 20px;
+}
+
+.container-nav {
+    display: flex;
+    padding: 10px;
+    height: 10px;
+    background-color: red;
+    color: aquamarine;
+    margin-bottom: 0px;
+  }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 99,9%;
+    padding: 2px;
+    margin: 2px;
+    border: 2px;
+  }
+    
+  .brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  li>a {
+    padding: 1px 14px;
+  }
+  
+  
+  li {
+    list-style-type: none;
+  }
+  
+  
+.a1 {
+    color: black;
+    text-decoration:cyan;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .button-menu-toggle {
+    display: none;
+  }
+
+@media (max-width: 768px) {
+    .column {
+      flex: 100%;
+    }
+  
+  
+    .nav-links {
+      display: none;
+    }
+  
+  
+    .button-menu-toggle {
+      display: block;
+      background-color: white;
+      border:none;
+      border-radius: 50px;
+      padding: 0 24px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+    }
+   
+    .nav-links.nav-links-responsive {
+      position: absolute;
+      display: flex;
+      background-color: rgba(20,20,20,0.95);
+      width: 100%;
+      height: 100%;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 200px;
+      align-items: center;
+      gap:70px;
+      font-size: 40px;
+  
+  
+    }
+  }
+
+
+
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+    border: 10px solid #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    
+}
+
+.main {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    background-image: url('cielo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    color: #000000; /* Color del texto */
+    text-align: center; /* Centra el texto en el contenedor */
+    padding: 100px; /* Espacio interno alrededor del contenido */
+
+}
+
+.destination {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.encabezado {
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+}
+
+.subencabezado{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    margin: 10px;
+}
+
+.movable-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: showImages 30s linear infinite; /* 180s para 3 fotos x 60s cada una */
+}
+
+.movable-image:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.movable-image:nth-child(2) {
+    animation-delay: 15s; /* Cada imagen se muestra durante 60 segundos */
+}
+
+.movable-image:nth-child(3) {
+    animation-delay: 30s; /* 60s (1 minuto) para la segunda imagen */
+}
+
+@keyframes showImages {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}   
+    
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

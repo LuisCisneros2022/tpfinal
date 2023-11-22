@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Reserva de Vuelo a París</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylef1.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Encabezado con Imagen de Fondo</h1>
+            <p>Bienvenido a mi sitio web.</p>
+        </div>
+    </header>
+    
+    <nav class="navbar" role="navigation">
+        <a href="#" >Mi página web</a>
+            <ul class="nav-links">
+                <li><a href="#" class="a1">Inicio</a></li>
+                <li><a href="#" class="a1">Destinos</a></li>
+                <li><a href="#" class="a1">Reservaciones</a></li>
+                <li><a href="#" class="a1">Contacto</a></li>
+            </ul>
+        <button class="button-menu-toggle">Menu</button>    
+    </nav>
+
+    
+    
+    
+    
+    <div class="background-image">
+        
+    
+        <div class="container">
+            <h1 class="text-center">Reserva tu vuelo a París</h1>
+        
+            <div class="container">
+                <h1 class="text-center">Reserva tu vuelo a Tokio</h1>
+        
+                <form id="reservationForm" action="procesar_reserva.php" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dni">DNI:</label>
+                        <input type="text" class="form-control" id="dni" name="dni" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="fecha">Fecha de Viaje:</label>
+                        <input type="date" class="form-control" id="fecha" name="fecha" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="clase">Clase de Vuelo:</label>
+                        <select class="form-control" id="clase" name="clase" required>
+                            <option value="economica">Económica</option>
+                            <option value="premium">Premium</option>
+                            <option value="business">Business</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="asientos">Número de Asientos:</label>
+                        <input type="number" class="form-control" id="asientos" name="asientos" min="1" required>
+                    </div>
+        
+                    <button type="submit" id="btn btn-primary">Reservar Vuelo</button>
+                </form>
+            </div>
+        
+    <footer>
+        <p>Vuelos de una vez en la vida </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-4s+ctkBXQMJ3P2JUnif1Yam6W8uHw3II6SH6ezvSYc6IteMr+r6az/n2fYlnM9Kd" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
